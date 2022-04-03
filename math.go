@@ -11,4 +11,12 @@ func main() {
 
 	s := math.Mod(q, r)
 	fmt.Println(s)
+
+	// modWithFloat := q % 2
+	// fmt.Println(modWithFloat)
+	// operator % not defined on q (variable of type float64)
+
+	// convert to integer
+	modWithInteger := int(q) % 2
+	fmt.Println(modWithInteger)
 }
